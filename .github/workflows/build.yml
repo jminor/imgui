@@ -3,6 +3,7 @@ name: build
 on:
   push:
   pull_request:
+  workflow_dispatch:
   workflow_run:
     # Use a workflow as a trigger of scheduled builds. Forked repositories can disable scheduled builds by disabling
     # "scheduled" workflow, while maintaining ability to perform local CI builds.
